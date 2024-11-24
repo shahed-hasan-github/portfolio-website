@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shahed Hasan - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Shahed Hasan</div>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#ai-paper">Research Paper</a></li>
+      <li><a href="#useful-links">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+<!-- Hero Section -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Shahed Hasan</span></h1>
+    <p>A passionate <strong>Software Engineer</strong>  with expertise in Java, Kotlin, Python, React, Node.js, and Android development. I specialize in building innovative solutions that merge creativity and functionality.
+
+      With a Master’s degree in Software Development & Engineering from Pace University and hands-on industry experience, I bring strong problem-solving skills, adaptability, and a commitment to excellence in every project I undertake.
+      
+      </p>
+
+    <!-- Icons with Text to the Right of Icon -->
+    <div class="profile-icons">
+      <div class="icon-container">
+        <img src="./assets/icon.png" alt="Experience" class="icon">
+        <p>Pace University</p>
+      </div>
+      <div class="icon-container">
+        <img src="./assets/icon2.png" alt="Education" class="icon">
+        <p>Software Engineer</p>
+      </div>
+      <div class="icon-container">
+        <img src="./assets/icon3.png" alt="Projects" class="icon">
+        <p>New York</p>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/profile-pic.jpg" alt="Shahed Hasan" class="hero-img">
+</section>
+
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>Java</h3>
+        <p>Proficient in building robust and efficient backend systems using Java, with hands-on experience in Spring Boot and enterprise applications.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Kotlin</h3>
+        <p>Expertise in Android development with Kotlin, focusing on clean architecture and modern UI components like Jetpack Compose.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Python</h3>
+        <p>Skilled in Python scripting, data analysis, and backend development using Django and Flask frameworks.</p>
+      </div>
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>Experienced in creating responsive and interactive web applications using React.js, Node.js, and modern ES6+ syntax.</p>
+      </div>
+
+
+      <div class="skill-card">
+        <h3>React</h3>
+        <p>Experienced in building dynamic and responsive web applications using React, including hooks, context API, and state management with Redux.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Node.js</h3>
+        <p>Adept at developing scalable server-side applications using Node.js, Express.js, and handling APIs and middleware.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>SQL</h3>
+        <p>Strong command of SQL for database querying, optimization, and management, with hands-on experience in MySQL and PostgreSQL.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Firebase</h3>
+        <p>Proficient in utilizing Firebase for real-time databases, authentication, and cloud messaging in mobile and web applications.</p>
+      </div>
+      <div class="skill-card">
+        <h3>API Development</h3>
+        <p>Experienced in designing, developing, and consuming RESTful and GraphQL APIs, ensuring secure, efficient, and scalable integration between systems.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Cloud Platforms</h3>
+        <p>Hands-on experience deploying scalable applications on AWS, managing databases, and implementing CI/CD pipelines.</p>
+      </div>
+
+      
+      <div class="skill-card">
+        <h3>UI/UX Design</h3>
+        <p>Skilled in creating intuitive and user-centric interfaces using tools like Figma and Adobe XD, with a focus on enhancing usability, accessibility, and overall user experience.</p>
+      </div>
+
+  
+      <div class="skill-card">
+        <h3>System Design</h3>
+        <p>Experienced in designing scalable, fault-tolerant, and high-performance system architectures, incorporating best practices for database modeling, microservices, and distributed systems.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+    <!-- Projects  -->
+    <section id="projects">
+      <h2>Explore Projects</h2>
+      <div class="slideshow-container">
+        <!-- Left Arrow -->
+        <button class="arrow left-arrow" onclick="changeSlide(-1)">&#10094;</button>
+    
+        <!-- Slides -->
+        <div class="slide active">
+          <div class="project-card">
+            <img src="./assets/pr1.png" alt="E-Commerce Platform">
+            <div class="project-info">
+              <br>
+              <h3>PrimeShop (E-Commerce)</h3>
+              <br>
+              <p>
+                Developed a dynamic e-commerce application featuring user authentication, a product catalog, a cart system, and seamless payment integration using Stripe API. Built with React.js and Node.js.
+              </p>
+              <br>
+              <a href="https://github.com/shahed-hasan-github/Shopping-E-Comerce" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="slide">
+          <div class="project-card">
+            <img src="./assets/pr2.png" alt="Real-Time Chat App">
+            <div class="project-info">
+              <br>
+              <h3>Real-Time Chat App</h3>
+              <p>
+                <br>
+                A responsive and real-time chat application with WebSocket integration, allowing smooth user interactions. Built using React.js for the front-end and Node.js for the back-end.
+              </p>
+              <br>
+              <a href="https://github.com/shahed-hasan-github/Real-time-Chat-WebApp" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- New Projects -->
+        <div class="slide">
+          <div class="project-card">
+            <img src="./assets/pr3.png" alt="Portfolio Website">
+            <div class="project-info">
+              <br>
+              <h3>Task Scheduler</h3>
+              <br>
+              <p>
+                An intuitive application with a user-friendly interface for organizing and managing tasks, leveraging React and Node.js.
+              </p>
+              <br>
+              <a href="https://github.com/shahed-hasan-github/Task-Scheduler" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="slide">
+          <div class="project-card">
+            <img src="./assets/pr4.png" alt="Android Notes App">
+            <div class="project-info">
+              <br>
+              <h3>Movie and Shows</h3>
+              <br>
+              <p>
+                Created a dynamic movie browsing platform with search and filtering features, built using React and integrated with the TMDb API.
+              </p>
+              <br>
+              <a href="https://github.com/shahed-hasan-github/Movie-and-Shows-Website" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="slide">
+          <div class="project-card">
+            <img src="./assets/pr5.png" alt="Weather Dashboard">
+            <div class="project-info">
+              <br>
+              <h3>Photo Video Editor</h3>
+              <br>
+              <p>
+                A feature-rich photo and video editing Android app with advanced tools for editing, filtering, and sharing media, built using Kotlin and integrated with various multimedia APIs.
+              </p>
+              <br>
+              <a href="https://github.com/shahed-hasan-github/Photo-Video-Editor" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="project-card">
+            <img src="./assets/pr6.png" alt="Weather Dashboard">
+            <div class="project-info">
+              <br>
+              <h3>Daily News</h3>
+              <br>
+              <p>
+                An Android news app that aggregates articles from multiple sources, with real-time updates and a customizable interface, using Java and the NewsAPI.
+              </p>
+              <br>
+              <a href="hhttps://github.com/shahed-hasan-github/News-android-appliocation" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project-card">
+            <img src="./assets/pr7.png" alt="Weather Dashboard">
+            <div class="project-info">
+              <br>
+              <h3>Password Manager</h3>
+              <br>
+              <p>
+                Developed a robust password manager application with secure storage and encryption features, built using Java and integrated with a user-friendly interface.
+              </p>
+              <br>
+              <a href="https://github.com/shahed-hasan-github/SecureDaily" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project-card">
+            <img src="./assets/pr8.png" alt="Weather Dashboard">
+            <div class="project-info">
+              <br>
+              <h3>Document Scanner</h3>
+              <p>
+                <br>
+                A document scanner app with advanced image processing features, OCR integration, and PDF export functionality, developed using Java and Kotlin for Android.
+              </p>
+              <br>
+              <a href="https://github.com/shahed-hasan-github/AI-Document-Scanner" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="project-card">
+            <img src="./assets/more.png" alt="Weather Dashboard">
+            <div class="project-info">
+              <br>
+              <h3>All Projects</h3>
+              <br>
+              <p>
+                Discover a wide range of innovative projects, including web applications, mobile apps, and software solutions, showcasing my skills and creativity, all available to view on my GitHub profile.
+              </p>
+              <br>
+              <a href="https://github.com/shahed-hasan-github" class="btn">View on Github</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Right Arrow -->
+        <button class="arrow right-arrow" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </section>
+    
+
+
+<!-- Paper Section -->
+<section id="ai-paper">
+  <h2>Research Paper</h2>
+  <p>I've explored the transformative potential of Artificial Intelligence in various industries and written a detailed research paper <br>
+    titled <strong>"The Impact of Artificial Intelligence"</strong>. This paper delves into its applications, challenges, and future prospects. 
+  </p>
+
+  <!-- Image Section -->
+  <div class="research-paper-image-container">
+    <img src="./assets/ai.png" alt="Research Paper Preview">
+  </div>
+
+  <!-- Button Section -->
+  <a href="./assets/Research_Paper.pdf" target="_blank" class="btn">Read the Paper</a>
+</section>
+
+<section id="useful-links">
+  <h2>Useful Resources</h2>
+  <p>Explore a curated list of resources, tools, and guides to boost your productivity and creativity.</p>
+  
+  <div class="links-grid">
+    <!-- Left Column -->
+    <div class="links-column">
+      <h3>Courses</h3>
+      <ul>
+        <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+        <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a></li>
+        <li><a href="https://www.sololearn.com" target="_blank">Sololearn</a></li>
+        <li><a href="https://www.atlassian.com" target="_blank">Atlassian</a></li>
+        <li><a href="https://www.lambdaschool.com" target="_blank">Lambda School</a></li>
+      </ul>
+
+      <h3>Practice</h3>
+      <ul>
+        <li><a href="https://www.codechef.com" target="_blank">CodeChef</a></li>
+        <li><a href="https://www.frontendmentor.io" target="_blank">FrontendMentor</a></li>
+        <li><a href="https://codecombat.com" target="_blank">CodeCombat</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+      </ul>
+
+      <h3>Image & Video Stocks</h3>
+      <ul>
+        <li><a href="https://www.pexels.com" target="_blank">Pexels</a></li>
+        <li><a href="https://unsplash.com" target="_blank">Unsplash</a></li>
+        <li><a href="https://pixabay.com" target="_blank">Pixabay</a></li>
+        <li><a href="https://www.freepik.com" target="_blank">FreePik</a></li>
+        <li><a href="https://coverr.co" target="_blank">Coverr</a></li>
+        <li><a href="https://mixkit.co" target="_blank">MixKit</a></li>
+        <li><a href="https://icons8.com" target="_blank">Icons8</a></li>
+        <li><a href="https://generated.photos" target="_blank">Generated Photos</a></li>
+      </ul>
+    </div>
+    
+    <!-- Right Column -->
+    <div class="links-column">
+      <h3>Design</h3>
+      <ul>
+        <li><a href="https://freebiesbug.com" target="_blank">Freebiesbug</a></li>
+        <li><a href="https://dribbble.com" target="_blank">Dribbble</a></li>
+        <li><a href="https://365psd.com" target="_blank">365psd</a></li>
+      </ul>
+
+      <h3>Logo Generators</h3>
+      <ul>
+        <li><a href="https://www.freelogodesign.org" target="_blank">FreeLogoDesign</a></li>
+        <li><a href="https://www.renderforest.com" target="_blank">RenderForest</a></li>
+        <li><a href="https://logomakr.com" target="_blank">LogoMakr</a></li>
+      </ul>
+
+      <h3>Color Palettes</h3>
+      <ul>
+        <li><a href="https://coolors.co" target="_blank">Coolors</a></li>
+        <li><a href="https://mycolor.space" target="_blank">My Color Space</a></li>
+        <li><a href="https://www.colorzilla.com" target="_blank">ColorZilla</a></li>
+      </ul>
+
+      <h3>Animations & Effects</h3>
+      <ul>
+        <li><a href="https://codepen.io" target="_blank">Codepen</a></li>
+        <li><a href="https://freefrontend.com/css-animation-examples/" target="_blank">77 CSS Animation Examples</a></li>
+        <li><a href="https://blog.hubspot.com/website/css-animation-examples" target="_blank">24 Creative CSS Animations</a></li>
+        <li><a href="https://blog.avada.io/css/animation-examples" target="_blank">50+ CSS Animation Examples</a></li>
+        <li><a href="https://tympanus.net/Development/BlockRevealers/index.html" target="_blank">Block Revealers</a></li>
+        <li><a href="https://shopify.github.io/draggable/" target="_blank">Draggable</a></li>
+        <li><a href="https://nucleoapp.com/tool/icon-transition" target="_blank">Icons Transition</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Have a project in mind or just want to say hi? Let’s connect! I’d love to hear from you.</p>
+
+    <div class="icons-container">
+      <div class="icon-item">
+        <a  href="mailto:shahedhasan.w1@gmail.com" target="_blank"> 
+        <img src="./assets/gmail.png" alt="Gmail" >
+      </a><p>Gmail </p>
+       
+      
+      </div>
+      <div class="icon-item">
+        <a href="https://www.linkedin.com/in/shahed-hasan-profile/" target="_blank"> 
+        <img src="./assets/linkedin.png" alt="linkedin">
+      </a>
+        <p>linkedin </p>
+       
+
+      </div>
+      <div class="icon-item">
+        <a  href="https://github.com/shahed-hasan-github" target="_blank"> 
+        <img src="./assets/github.png" alt="GitHub" >  </a>
+         <p>Github </p>
+        
+    
+      </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+   <!-- Contact Form -->
+<div class="contact-form">
+  <h3>Send Me a Message</h3>
+  <form action="send-email.php" method="POST">
+    <br>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <br>
+    <br>
+    <br>
+    <p>© 2024 Shahed Hasan. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
+<script>
+  let currentSlide = 0;
+
+  function changeSlide(direction) {
+    const slides = document.querySelectorAll(".slide");
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }
+</script>
+
+

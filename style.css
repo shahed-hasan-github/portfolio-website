@@ -1,0 +1,551 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* Navigation */
+#desktop-nav {
+  background: #fff;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: medium;
+  color: #000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #10B981;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 5%;
+  background: #fff;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #10B981;
+}
+
+.hero-img {
+  max-width: 40%;
+  border-radius: 10px;
+}
+/* Profile Icons */
+.profile-icons {
+  display: flex;
+ 
+  width: 100%;
+  margin-top: 20px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  /* Align items to the left */
+}
+
+.icon {
+  width:  60px; /* Adjust the size of the icon */
+  height: 60px; /* Ensure it's square */
+  object-fit: cover; /* Make sure the icon keeps its aspect ratio */
+ /* Optional: Add rounded corners */
+  margin-left: 5px;
+  /* Add space between the icon and text */
+}
+
+.icon-container p {
+  font-size: 1rem;
+  color: #555;
+  margin: 3px; /* Remove margin from text for better alignment */
+}
+
+
+/* Sections */
+section {
+  padding: 60px 5%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+  color: #10B981;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto; /* Center the slideshow */
+  overflow: hidden; /* Hide content outside the container */
+}
+
+/* Slides */
+.slide {
+  display: none; /* Hide all slides by default */
+  text-align: center;
+}
+
+.slide.active {
+  display: block; /* Show only the active slide */
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #999999;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0 10px;
+}
+
+.left-arrow {
+  left: 50px;
+}
+
+.right-arrow {
+  right: 50px;
+}
+
+.arrow:hover {
+  color: #0F0F0F;
+}
+
+/* Project Card Alignment */
+
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.project-card img {
+  max-width: 100%; /* Scale image to fit the card */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 600px; /* Limit the maximum height */
+  border-radius: 10px; /* Optional: Rounded corners */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+.project-card h3,
+.project-card p {
+  max-width: 1000px; /* Limit the width of the text */
+/* Add padding only around the text */
+  margin: 0 auto; /* Center the text horizontally */
+}
+
+.project-card p {
+  line-height: 1.6; /* Add spacing between lines for readability */
+}
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%; /* Ensure the slideshow spans the available width */
+  overflow: hidden; /* Hide overflow for gradient effects */
+}
+
+/* Gradient Overlay */
+.slideshow-container::before,
+.slideshow-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%; /* Adjust width for the gradient fade */
+  z-index: 5; /* Place above slides but below arrows */
+  pointer-events: none; /* Allow arrows to remain clickable */
+}
+
+
+
+
+
+/* Paper Section */
+/* Paper Section */
+#ai-paper {
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #f7f7f7; /* Optional background color */
+}
+
+#ai-paper h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#ai-paper p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Image Styling */
+.research-paper-image-container {
+  margin: 20px 0; /* Space around the image */
+  text-align: center; /* Ensure the image is centered */
+}
+
+.research-paper-image-container img {
+  max-width: 100%; /* Ensure the image scales properly */
+  width: 800px; /* Adjust to your preferred size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Button Styling */
+#ai-paper .btn {
+  padding: 12px 20px;
+  background-color: #10B981; /* Match your accent color */
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px; /* Space above the button */
+  transition: background-color 0.3s ease;
+}
+
+#ai-paper .btn:hover {
+  background-color: #131313; /* Darker shade for hover */
+}
+
+
+
+#useful-links {
+  padding: 50px 20px;
+  text-align: center;
+ 
+}
+
+#useful-links h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#useful-links p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns */
+  gap: 30px; /* Space between columns */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid container */
+}
+
+.links-column {
+
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left; /* Align content to the left inside the column */
+}
+
+.links-column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #10B981; /* Accent color */
+}
+
+.links-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-column ul li {
+  margin-bottom: 10px;
+}
+
+.links-column ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #0F0F0F; /* Link color */
+  transition: color 0.3s ease;
+}
+
+.links-column ul li a:hover {
+  color: #0F0F0F; /* Hover effect for links */
+}
+
+
+
+/* Contact Section */
+#contact {
+  background:#f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  display: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Icons Section */
+
+
+.icons-container {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center;    /* Center the icons vertically if necessary */   /* Add some spacing around the section */
+  display: flex;
+  gap: 45px; /* Space between the icons */
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 90px; /* Set the size for the icons */
+  height: 90px; /* Set the size for the icons */
+}
+
+.icon-item img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  /* Optional: Rounded corners */
+}
+
+/* Contact Info */
+
+.contact-info {
+  flex: 1 1 45%;
+  text-align: left;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.contact-info a {
+  color: #10B981;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+/* Centering the Contact Form */
+.contact-form {
+  display: flex;             /* Enable flexbox */
+  flex-direction: column;    /* Stack children vertically */
+  justify-content: center;   /* Center content vertically */
+  align-items: center; 
+  text-align: start;      /* Center content horizontally */
+  padding: 25px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 700px;          /* Set max width of the form */
+  width: 100%;               /* Make it responsive */
+  margin: 0 auto;            /* Horizontally center the form */
+}
+
+.contact-form h3 {
+  text-align: center;
+  font-size: 1.5rem;      /* Center align the heading */
+}
+
+.contact-form .form-group {
+  width: 100%;               /* Ensure the form inputs are full-width */
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;               /* Make inputs take full width */
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;         /* Allow vertical resizing */
+}
+
+.contact-form button {
+  background-color: #10B981;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0F0F0F;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+/* Footer Styles */
+
+footer {
+  grid-column: 1 / -1;  /* Makes the footer span across all columns */
+  text-align: center;    /* Center the content inside the footer */
+}
+
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 20px; /* Consistent padding */
+  background-color: #10B981; /* Consistent background color */
+  color: white;
+  border-radius: 5px; /* Rounded corners for consistency */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Standard font size */
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0F0F0F; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn:active {
+  transform: translateY(0); /* Reset when clicked */
+}
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+  }
+
+  form {
+    width: 90%;
+  }
+
+
+
+}
